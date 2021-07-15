@@ -1,6 +1,7 @@
 
 import Icon from './burgers.jpg';
 
+
 const loadPage = () => {
     const content = document.querySelector("#content");
     const middle = document.createElement("div");
@@ -16,6 +17,7 @@ const loadPage = () => {
     const menuBtn = document.createElement("input");
     const contactBtn = document.createElement("input");
 
+
     const listStart = document.createElement("ul");
 
     const monday = document.createElement("li");
@@ -27,10 +29,6 @@ const loadPage = () => {
     const sunday = document.createElement("li");
 
 
-
-
-    
-
     middle.classList.add("middle");
 
     header.classList.add("header");
@@ -40,6 +38,9 @@ const loadPage = () => {
     homeBtn.classList.add("home-btn");
     menuBtn.classList.add("menu-btn");
     contactBtn.classList.add("contact-btn");
+
+    //since this is the home page
+    homeBtn.setAttribute("style", "background-color: rgba(245, 96, 10, 0.8");
 
     restDesc.classList.add("rest-desc");
     hours.classList.add("hours");
@@ -67,17 +68,6 @@ const loadPage = () => {
     sunday.textContent = "Sunday: noon - 10pm";
 
 
-    //title.classList.add("restaurant-name");
-    //title.textContent = "Viraj's Fat Burgers";
-
-    //header.appendChild(title);
-    //content.appendChild(header);
-    //content.appendChild(backdrop);
-    //content.appendChild(firstTest);
-    
-
-    
-    //middle.appendChild(navDiv);
     content.appendChild(middle);
     const middleEl = document.querySelector(".middle");
 
@@ -111,22 +101,7 @@ const loadPage = () => {
 
 
 
-    
-    
-    //midContent.appendChild(restDesc);
-    //midContent.appendChild(hours);
 
-    //middleEl.appendChild(midContent);
-
-    
-
-   
-
-
-
-
-    console.log("I have loaded");
-    console.log("helloooo agin, lies---wooooooh");
      // Add the image to our existing div.
     const myIcon = new Image();
     myIcon.src = Icon;
