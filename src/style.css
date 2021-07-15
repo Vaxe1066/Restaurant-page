@@ -1,6 +1,93 @@
-body{
-    background: url('./burgers.jpg');
+
+html, body {    
+  background: url('./burgers.jpg') no-repeat center fixed;     
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+
+.content{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
   }
+
+
+.middle{
+    grid-column: 2/4;
+    grid-row: 1/7;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+
+
+.header{
+  width:100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 50px;
+}
+
+input{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  width:90px; 
+  height: 50px;
+  font-size: 20px;
+}
+
+input:hover{
+  transform: scale(1.05);
+  background-color: rgba(245, 96, 10, 0.8);
+}
+
+
+.mid-content{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background-color: rgba(0,0,0, 0.6);
+  margin-top: 50px;
+  width: 700px;
+  height: 550px;
+}
+
+.rest-desc{
+  padding: 15px 15px 0px 15px;
+  font-size: 25px;
+}
+
+
+.rest-desc, .hours{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+}
+
+
+
+
+.hours{
+  padding-top: 30px;
+}
+
+li{
+  padding-top: 5px;
+  font-size: 25px;
+}
+
 
 
 
